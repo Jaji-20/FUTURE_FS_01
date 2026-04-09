@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jaji | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1> <class="logo">Jaji Chandrakala </h1>
+
+  <nav>
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="section hero">
+  <h1>J.Jaji Chandrakala </h1>
+  <p id="typing"></p>
+
+  <div class="buttons">
+
+  <a href="jaji_resume.pdf" target="_blank">
+    <button>View Resume</button>
+  </a>
+
+  <a href="jaji_resume.pdf" download>
+    <button class="outline">Download Resume</button>
+  </a>
+
+</div>
+</section>
+
+<hr>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <p>
+    <p>
+I am a passionate aspiring full-stack web developer with a strong interest in building clean and user-friendly web applications. 
+I enjoy turning ideas into real-world projects and continuously improving my skills in modern web technologies. 
+Currently, I am focused on strengthening my frontend development and exploring backend concepts. 
+I am eager to learn, grow, and contribute to impactful projects.
+</p>
+  </p>
+</section>
+
+<hr>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+    <span>HTML,CSS,JavaScript</span>
+    <span>GitHub</span>
+    <span>Basic UI Design</span>
+    <span>Basic UX Design</span>
+    <span>Responsive Design</span>
+  </div>
+</section>
+
+<hr>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <h2>Projects</h2>
+
+  <div class="project-container">
+
+  <!-- Portfolio -->
+  <div class="project-container">
+
+  <!-- Portfolio -->
+  <div class="project-card" onclick="openProject(
+    'Portfolio Website',
+    'A personal portfolio website showcasing my skills, projects, and contact information with a modern UI and smooth interactions.',
+    'HTML, CSS, JavaScript',
+    'https://github.com/yourusername/portfolio'
+  )">
+    <h3>Portfolio Website</h3>
+    <p>Modern responsive portfolio</p>
+  </div>
+
+  <!-- Fake Image Detector -->
+  <div class="project-card" onclick="openProject(
+    'Fake Image Detector (Work in Progress)',
+    'A frontend application designed to help users distinguish between AI-generated and real images using categorized datasets and UI-based analysis.',
+    'React, JavaScript, CSS',
+    '#'
+  )">
+    <h3>Fake Image Detector</h3>
+    <p>Detect AI-generated images</p>
+  </div>
+
+</div>
+</section>
+
+<hr>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <h2>Contact</h2>
+
+ <div class="contact-box">
+
+  <p class="contact-text">
+    I'm open to internships, collaborations, and exciting opportunities.
+    Feel free to reach out — I'd love to connect!
+  </p>
+
+  <div class="contact-item">
+    <label>Email</label>
+    <input type="text" value="jajichandrakala@gmail.com" readonly>
+  </div>
+
+  <div class="contact-item">
+    <label>GitHub</label>
+    <input type="text" value="https://github.com/Jaji-20" readonly>
+  </div>
+
+  <div class="contact-item">
+    <label>LinkedIn</label>
+    <input type="text" value="https://www.linkedin.com/in/jakkilinki-jaji-chandrakala-8b3154331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" readonly>
+  </div>
+
+</div>
+</section>
+
+<footer>
+  <p>© 2026 Jaji</p>
+</footer>
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeProject()">&times;</span>
+
+    <h2 id="projectTitle"></h2>
+
+    <p id="projectDesc"></p>
+
+    <h4 class="tech-heading">Tech Stack</h4>
+    <p id="projectTech"></p>
+
+    <a id="projectLink" target="_blank">View Project</a>
+
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
